@@ -11,7 +11,7 @@ public class Puzzle1 extends Puzzle {
         Set<Coordinate> history = new HashSet<>();
         Coordinate head = new Coordinate(0, 0);
         Coordinate tail = new Coordinate(0, 0);
-        history.add(tail);
+        history.add(new Coordinate(0, 0));
         String line;
         while ((line = reader.readLine()) != null) {
             history.addAll(makeMove(new Move(line), head, tail));

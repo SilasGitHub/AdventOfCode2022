@@ -29,12 +29,12 @@ public class Coordinate {
 
     @Override
     public boolean equals(Object obj) {
-//        if (obj == this) {
-//            return true;
-//        }
-//        if (!(obj instanceof Coordinate)) {
-//            return false;
-//        }
+        if (obj == this) {
+            return true;
+        }
+        if (!(obj instanceof Coordinate)) {
+            return false;
+        }
         Coordinate c = (Coordinate) obj;
         return x == c.x && y == c.y;
     }

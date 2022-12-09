@@ -15,7 +15,7 @@ public class Puzzle2 extends Puzzle {
         for (int i = 0; i < 10; i++) {
             rope.add(new Coordinate(0, 0));
         }
-        history.add(rope.get(9));
+        history.add(new Coordinate(rope.get(9).getX(), rope.get(9).getY()));
         String line;
         while ((line = reader.readLine()) != null) {
             history.addAll(makeMove(new Move(line), rope));
